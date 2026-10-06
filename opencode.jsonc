@@ -1,0 +1,79 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "instructions": ["AGENTS.md"],
+  "default_agent": "orchestrator",
+  "agents": {
+    "orchestrator": {
+      "description": "Lead production orchestrator for the Metin2 WorldEditor rebuild.",
+      "mode": "primary",
+      "temperature": 0.1
+    },
+    "explorer": {
+      "description": "Repository archaeology, dependency and baseline investigator.",
+      "mode": "subagent",
+      "temperature": 0.05
+    },
+    "architect": {
+      "description": "Architecture, boundaries, migration and integration specialist.",
+      "mode": "subagent",
+      "temperature": 0.05
+    },
+    "metin2": {
+      "description": "Metin2 formats, semantics, compatibility and serialization specialist.",
+      "mode": "subagent",
+      "temperature": 0.05
+    },
+    "terrain": {
+      "description": "Terrain, water, attributes, brushes, spatial data and editing specialist.",
+      "mode": "subagent",
+      "temperature": 0.05
+    },
+    "renderer": {
+      "description": "DX9 compatibility, DX11 renderer, shaders, GPU performance and diagnostics.",
+      "mode": "subagent",
+      "temperature": 0.05
+    },
+    "assets": {
+      "description": "Metin2 assets, textures, models, effects, materials and resource pipeline specialist.",
+      "mode": "subagent",
+      "temperature": 0.05
+    },
+    "editor-tools": {
+      "description": "Viewport tools, gizmos, picking, snapping, commands and editor interaction specialist.",
+      "mode": "subagent",
+      "temperature": 0.05
+    },
+    "ui-ux": {
+      "description": "Professional NewSchool UI/UX, docking, accessibility, DPI and visual systems specialist.",
+      "mode": "subagent",
+      "temperature": 0.05
+    },
+    "performance": {
+      "description": "Profiling, memory, threading, streaming, caching and frame-time specialist.",
+      "mode": "subagent",
+      "temperature": 0.05
+    },
+    "qa": {
+      "description": "Tests, regression, fuzzing, smoke tests and runtime verification specialist.",
+      "mode": "subagent",
+      "temperature": 0.05
+    },
+    "reviewer": {
+      "description": "Independent correctness, safety, compatibility and code-review gatekeeper.",
+      "mode": "subagent",
+      "temperature": 0.05
+    },
+    "release": {
+      "description": "Build, packaging, CI, reproducibility and release-readiness specialist.",
+      "mode": "subagent",
+      "temperature": 0.05
+    }
+  },
+  "permissions": {
+    "edit": "allow",
+    "bash": "allow",
+    "webfetch": "allow",
+    "external_directory": "deny",
+    "doom_loop": "deny"
+  }
+}
