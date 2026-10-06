@@ -1,0 +1,8 @@
+{
+  "pack": "Metin2 NewSchool WorldEditor OpenCode Production Pack",
+  "agents": 13,
+  "skills": 8,
+  "commands": 7,
+  "config": "opencode.jsonc",
+  "root_instruction": "AGENTS.md"
+}

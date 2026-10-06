@@ -1,0 +1,10 @@
+{
+  "name": "Metin2-NewSchool-WorldEditor-Orchestrator",
+  "purpose": "OpenCode v1 project-local orchestration pack for a Metin2 WorldEditor rebuild/rework",
+  "reference_repo": "https://github.com/Debloat/WorldEditor-Renewal/tree/main/ClientSource/WorldEditor",
+  "feature_reference": "https://worldeditorremix.github.io/",
+  "generated_utc": "2026-10-06T00:00:00Z",
+  "open_code_layout": ".opencode/{agents,commands,skills}",
+  "compatibility": "OpenCode V1 config syntax; project-local .opencode agents/commands/skills",
+  "config_note": "Uses singular permission and file-based agents for OpenCode V1 compatibility."
+}
